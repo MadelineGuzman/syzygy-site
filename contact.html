@@ -3,60 +3,101 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact | Syzygy Entertainment</title>
-  <meta name="description" content="Contact Syzygy Entertainment to begin a project.">
+  <title>Contact · Syzygy Entertainment</title>
+  <meta name="description" content="Contact Madeline Guzman at Syzygy Entertainment for game audio, sound design, mixing, vocal production, and creative audio projects.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="noise" aria-hidden="true"></div>
-
-  <header class="site-header">
-    <a class="brand" href="index.html" aria-label="Syzygy Entertainment home">
-      <span class="brand-mark">S</span>
-      <span>Syzygy Ent</span>
+  <nav class="site-nav" id="siteNav">
+    <a href="index.html" class="nav-brand">
+      <span class="nav-brand-main">Syzygy Entertainment</span>
+      <span class="nav-brand-sub">Where Creativity and the Cosmos Align</span>
     </a>
-    <nav class="nav-links" aria-label="Primary navigation">
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
       <a href="work.html">Work</a>
       <a href="services.html">Services</a>
       <a href="tools.html">Tools</a>
       <a href="about.html">About</a>
-      <a class="nav-cta" href="contact.html">Contact</a>
-    </nav>
-    <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
-      <span></span>
-      <span></span>
+      <a href="contact.html">Contact</a>
+    </div>
+    <button class="nav-burger" id="navBurger" aria-label="Open menu">
+      <span></span><span></span><span></span>
     </button>
-  </header>
+  </nav>
 
-  <main class="page-shell subpage contact-layout">
-    <section class="reveal">
-      <p class="eyebrow">Contact</p>
-      <h1 class="page-title">Let the next project find its orbit.</h1>
-      <p class="lead">Share the shape of what you are building, where it is headed, and what kind of alignment would make it easier to launch.</p>
+  <div class="noise" aria-hidden="true"></div>
+
+  <main>
+    <section class="contact-hero page-shell">
+      <div class="reveal">
+        <h1>Send Your Transmission</h1>
+        <p>I respond within 48 hours. Let's build something together.</p>
+      </div>
     </section>
-    <form class="contact-form reveal" action="#" method="post">
-      <label>
-        Name
-        <input type="text" name="name" placeholder="Your name">
-      </label>
-      <label>
-        Email
-        <input type="email" name="email" placeholder="you@example.com">
-      </label>
-      <label>
-        Project Signal
-        <textarea name="message" rows="6" placeholder="Tell me what you are building..."></textarea>
-      </label>
-      <button class="button primary" type="submit">Send Inquiry</button>
-    </form>
+
+    <section class="contact-form-section page-shell" aria-label="Contact form">
+      <div data-fs-success hidden>Transmission received. I'll be in touch within 48 hours.</div>
+      <div data-fs-error hidden>Something went wrong. Please try again or email me directly.</div>
+      <form class="transmission-form reveal" id="contact-form">
+        <div class="field">
+          <label for="name">Full Name</label>
+          <input id="name" type="text" name="name" required data-fs-field>
+          <span data-fs-error="name"></span>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" type="email" name="email" required data-fs-field>
+          <span data-fs-error="email"></span>
+        </div>
+        <div class="field">
+          <label for="project_type">Project Type</label>
+          <select id="project_type" name="project_type" required data-fs-field>
+            <option value="Game Audio & Sound Design">Game Audio &amp; Sound Design</option>
+            <option value="Mixing & Engineering">Mixing &amp; Engineering</option>
+            <option value="Vocal Production">Vocal Production</option>
+            <option value="General Inquiry">General Inquiry</option>
+          </select>
+          <span data-fs-error="project_type"></span>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required data-fs-field></textarea>
+          <span data-fs-error="message"></span>
+        </div>
+        <button class="submit-btn" type="submit" data-fs-submit-btn>Send Transmission</button>
+      </form>
+      <script>
+        window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+        formspree('initForm', { formElement: '#contact-form', formId: 'xvzddony' });
+      </script>
+      <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
+    </section>
+
+    <section class="contact-socials page-shell" aria-label="Social links">
+      <a href="#">Instagram</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">Gumroad</a>
+    </section>
   </main>
 
-  <footer class="site-footer page-shell">
-    <p>Syzygy Entertainment</p>
-    <a href="contact.html">Begin a project</a>
+  <footer class="site-footer">
+    <div class="page-shell">
+      <h2>Syzygy Entertainment</h2>
+      <div class="social-links" aria-label="Social links">
+        <a href="#"><span>IG</span> Instagram</a>
+        <a href="#"><span>IN</span> LinkedIn</a>
+        <a href="#"><span>GM</span> Gumroad</a>
+      </div>
+      <p>© 2026 Syzygy Entertainment · Developed by Madeline Guzman</p>
+      <div class="legal-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms &amp; Conditions</a>
+      </div>
+    </div>
   </footer>
 
   <script src="js/main.js"></script>

@@ -3,59 +3,126 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tools | Syzygy Entertainment</title>
-  <meta name="description" content="Creative tools and systems by Syzygy Entertainment.">
+  <title>Tools · Syzygy Entertainment</title>
+  <meta name="description" content="Discover Syzygy Entertainment tools including VocalChain AI, SFX libraries, and upcoming creative audio utilities.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="noise" aria-hidden="true"></div>
-
-  <header class="site-header">
-    <a class="brand" href="index.html" aria-label="Syzygy Entertainment home">
-      <span class="brand-mark">S</span>
-      <span>Syzygy Ent</span>
+  <nav class="site-nav" id="siteNav">
+    <a href="index.html" class="nav-brand">
+      <span class="nav-brand-main">Syzygy Entertainment</span>
+      <span class="nav-brand-sub">Where Creativity and the Cosmos Align</span>
     </a>
-    <nav class="nav-links" aria-label="Primary navigation">
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
       <a href="work.html">Work</a>
       <a href="services.html">Services</a>
       <a href="tools.html">Tools</a>
       <a href="about.html">About</a>
-      <a class="nav-cta" href="contact.html">Contact</a>
-    </nav>
-    <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
-      <span></span>
-      <span></span>
+      <a href="contact.html">Contact</a>
+    </div>
+    <button class="nav-burger" id="navBurger" aria-label="Open menu">
+      <span></span><span></span><span></span>
     </button>
-  </header>
+  </nav>
 
-  <main class="page-shell subpage">
-    <p class="eyebrow reveal">Tools</p>
-    <h1 class="page-title reveal">Small instruments for clearer creative motion.</h1>
-    <section class="tool-grid">
-      <article class="tool-card reveal">
-        <span>Launch Map</span>
-        <h2>Plan the arc before the countdown.</h2>
-        <p>A framework for sequencing assets, decisions, audiences, and messages around a launch moment.</p>
+  <div class="noise" aria-hidden="true"></div>
+
+  <main>
+    <section class="tools-hero page-shell">
+      <div class="reveal">
+        <h1>Creative AI Lab</h1>
+        <p>Where sound meets intelligence — tools built by an engineer, for engineers.</p>
+      </div>
+    </section>
+
+    <section class="ai-feature page-shell" aria-label="VocalChain AI">
+      <article class="ai-feature-card reveal">
+        <div class="ai-feature-copy">
+          <span class="ai-badge">AI Tool · A Syzygy Entertainment Build</span>
+          <h2>VocalChain AI</h2>
+          <p>Generate polished vocal chains tailored to your style, DAW, and intensity. Built from real engineering knowledge — not guesswork. Free to use.</p>
+          <div class="software-tags" aria-label="Supported DAWs">
+            <span>FL Studio</span>
+            <span>Logic Pro</span>
+            <span>Pro Tools</span>
+            <span>Ableton</span>
+          </div>
+          <a class="launch-tool-button" href="https://madelineguzman.github.io/AI-Vocal-Architect/">Launch VocalChain AI</a>
+        </div>
+        <div class="signal-diagram" aria-label="Animated signal chain diagram">
+          <svg viewBox="0 0 620 220" role="img">
+            <title>Input to output vocal chain</title>
+            <defs>
+              <linearGradient id="signalGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#5ad8ff"></stop>
+                <stop offset="55%" stop-color="#8f62ff"></stop>
+                <stop offset="100%" stop-color="#f0c060"></stop>
+              </linearGradient>
+            </defs>
+            <path class="signal-path" d="M70 110 H550"></path>
+            <circle class="flow-dot" r="7"></circle>
+            <g class="chain-node" transform="translate(70 110)">
+              <circle r="34"></circle>
+              <text y="5">Input</text>
+            </g>
+            <g class="chain-node" transform="translate(190 110)">
+              <circle r="34"></circle>
+              <text y="5">EQ</text>
+            </g>
+            <g class="chain-node" transform="translate(310 110)">
+              <circle r="34"></circle>
+              <text y="5">Comp</text>
+            </g>
+            <g class="chain-node" transform="translate(430 110)">
+              <circle r="34"></circle>
+              <text y="5">FX</text>
+            </g>
+            <g class="chain-node" transform="translate(550 110)">
+              <circle r="34"></circle>
+              <text y="5">Output</text>
+            </g>
+          </svg>
+        </div>
       </article>
-      <article class="tool-card reveal">
-        <span>Signal Audit</span>
-        <h2>Find the strongest frequency.</h2>
-        <p>A brand clarity review that identifies friction, missed resonance, and opportunities for sharper positioning.</p>
+    </section>
+
+    <section class="sfx-libraries page-shell" aria-labelledby="sfxTitle">
+      <h2 id="sfxTitle" class="section-title reveal">SFX Libraries on Gumroad</h2>
+      <article class="sfx-card reveal">
+        <span>SFX Library</span>
+        <h3>Obsolete Machines Vol. 1</h3>
+        <p>Authentic field-recorded mechanical banking sounds for film, game, and audio design. Recorded by Rara Kallistos · Syzygy Entertainment.</p>
+        <a class="gold-cta" href="#">Unlock the Library</a>
       </article>
-      <article class="tool-card reveal">
-        <span>Ops Console</span>
-        <h2>Make the invisible work visible.</h2>
-        <p>Custom dashboards and lightweight internal tools for tracking creative workflows without adding clutter.</p>
+    </section>
+
+    <section class="coming-soon page-shell" aria-labelledby="comingSoonTitle">
+      <h2 id="comingSoonTitle" class="reveal">More Tools Incoming</h2>
+      <article class="coming-soon-card reveal">
+        <div class="empty-orb" aria-hidden="true"></div>
+        <p>Next tool in development — stay tuned.</p>
       </article>
     </section>
   </main>
 
-  <footer class="site-footer page-shell">
-    <p>Syzygy Entertainment</p>
-    <a href="contact.html">Begin a project</a>
+  <footer class="site-footer">
+    <div class="page-shell">
+      <h2>Syzygy Entertainment</h2>
+      <div class="social-links" aria-label="Social links">
+        <a href="#"><span>IG</span> Instagram</a>
+        <a href="#"><span>IN</span> LinkedIn</a>
+        <a href="#"><span>GM</span> Gumroad</a>
+      </div>
+      <p>© 2026 Syzygy Entertainment · Developed by Madeline Guzman</p>
+      <div class="legal-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms &amp; Conditions</a>
+      </div>
+    </div>
   </footer>
 
   <script src="js/main.js"></script>

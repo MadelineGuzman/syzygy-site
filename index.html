@@ -3,79 +3,122 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Syzygy Entertainment | Cosmic Strategy for Creative Systems</title>
-  <meta name="description" content="Syzygy Entertainment builds elegant creative systems, tools, and experiences for ambitious brands and artists.">
+  <title>Home · Syzygy Entertainment</title>
+  <meta name="description" content="Syzygy Entertainment is the creative universe of Madeline Guzman, spanning game audio, sound design, mixing, vocal production, SFX libraries, and AI tools.">
+  <meta property="og:title" content="Home · Syzygy Entertainment">
+  <meta property="og:description" content="Game audio, sound design, mixing, vocal production, SFX libraries, and creative AI tools by Madeline Guzman.">
+  <meta property="og:image" content="assets/img/madeline.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="noise" aria-hidden="true"></div>
-
-  <header class="site-header">
-    <a class="brand" href="index.html" aria-label="Syzygy Entertainment home">
-      <span class="brand-mark">S</span>
-      <span>Syzygy Ent</span>
+  <nav class="site-nav" id="siteNav">
+    <a href="index.html" class="nav-brand">
+      <span class="nav-brand-main">Syzygy Entertainment</span>
+      <span class="nav-brand-sub">Where Creativity and the Cosmos Align</span>
     </a>
-    <nav class="nav-links" aria-label="Primary navigation">
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
       <a href="work.html">Work</a>
       <a href="services.html">Services</a>
       <a href="tools.html">Tools</a>
       <a href="about.html">About</a>
-      <a class="nav-cta" href="contact.html">Contact</a>
-    </nav>
-    <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
-      <span></span>
-      <span></span>
+      <a href="contact.html">Contact</a>
+    </div>
+    <button class="nav-burger" id="navBurger" aria-label="Open menu">
+      <span></span><span></span><span></span>
     </button>
-  </header>
+  </nav>
+
+  <div class="noise" aria-hidden="true"></div>
 
   <main>
-    <section class="hero page-shell">
-      <p class="eyebrow reveal">Creative infrastructure for luminous ideas</p>
-      <div class="hero-grid">
-        <div class="hero-copy reveal">
-          <h1>Where strategy, story, and systems move into alignment.</h1>
-          <p class="lead">Syzygy Entertainment shapes digital experiences, operational tools, and narrative ecosystems for founders, artists, and teams building the next signal.</p>
-          <div class="hero-actions">
-            <a class="button primary" href="work.html">Explore the Work</a>
-            <a class="button ghost" href="services.html">See Services</a>
-          </div>
+    <section class="home-hero" aria-labelledby="homeHeroTitle">
+      <div class="star-field" aria-hidden="true">
+        <span class="star-layer star-layer-one"></span>
+        <span class="star-layer star-layer-two"></span>
+        <span class="star-layer star-layer-three"></span>
+      </div>
+      <div class="home-hero-content reveal">
+        <h1 id="homeHeroTitle">Syzygy Entertainment</h1>
+        <p>Where Creativity and the Cosmos Align</p>
+        <div class="home-hero-actions">
+          <a class="cosmic-cta cta-cyan" href="services.html">Hire Madeline</a>
+          <a class="cosmic-cta cta-violet" href="work.html">Enter the Universe</a>
         </div>
-        <aside class="constellation-card reveal" aria-label="Syzygy focus areas">
-          <div class="orbit-ring"></div>
-          <div class="star-node node-one"></div>
-          <div class="star-node node-two"></div>
-          <div class="star-node node-three"></div>
-          <h2>Designing the invisible architecture behind unforgettable launches.</h2>
-          <p>Brand systems, automation, audience journeys, creative ops, and tools that make the whole constellation easier to steer.</p>
-        </aside>
       </div>
     </section>
 
-    <section class="page-shell section-grid">
-      <article class="panel reveal">
-        <span class="panel-kicker">01</span>
-        <h2>Signal</h2>
-        <p>Clarify the message, market, and emotional gravity at the center of the work.</p>
+    <section class="identity-section page-shell" aria-label="Creative identities">
+      <article class="identity-card reveal">
+        <p class="identity-kicker">Madeline Guzman</p>
+        <h2>Audio Engineer &amp; Sound Designer</h2>
+        <p>Available for game audio, mixing, and vocal production sessions.</p>
+        <a class="identity-button" href="services.html">Work With Me</a>
       </article>
-      <article class="panel reveal">
-        <span class="panel-kicker">02</span>
-        <h2>System</h2>
-        <p>Build repeatable structures that keep launches, teams, and content moving.</p>
+      <article class="identity-card reveal">
+        <p class="identity-kicker">Rara Kallistos</p>
+        <h2>Artist &amp; Creative Universe</h2>
+        <p>Original music, sound design, SFX libraries, and AI tools.</p>
+        <a class="identity-button" href="work.html">Enter the Universe</a>
       </article>
-      <article class="panel reveal">
-        <span class="panel-kicker">03</span>
-        <h2>Scale</h2>
-        <p>Turn the strongest ideas into durable digital platforms, campaigns, and tools.</p>
+    </section>
+
+    <section class="featured-work page-shell" aria-labelledby="selectedWorkTitle">
+      <h2 id="selectedWorkTitle" class="section-title reveal">Selected Work</h2>
+      <div class="featured-work-grid">
+        <article class="work-card reveal">
+          <span class="work-badge">Game Audio</span>
+          <h3>Game Audio</h3>
+          <p class="work-placeholder">Placeholder title</p>
+          <p class="work-software">Wwise · Unreal Engine</p>
+        </article>
+        <article class="work-card reveal">
+          <span class="work-badge">Mixing</span>
+          <h3>Audio Mix</h3>
+          <p class="work-placeholder">Placeholder title</p>
+          <p class="work-software">Pro Tools · Logic</p>
+        </article>
+        <article class="work-card reveal">
+          <span class="work-badge">AI Tool</span>
+          <h3>VocalChain AI</h3>
+          <p>Vocal chain generator for engineers and producers</p>
+          <a class="work-card-button" href="https://madelineguzman.github.io/AI-Vocal-Architect/">Launch Tool</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="marquee-strip" aria-label="Syzygy capabilities">
+      <div class="marquee-track">
+        <span>Game Audio · Sound Design · Mixing &amp; Engineering · Vocal Production · SFX Libraries · AI Tools · Pro Tools · Wwise · Unreal Engine ·</span>
+        <span>Game Audio · Sound Design · Mixing &amp; Engineering · Vocal Production · SFX Libraries · AI Tools · Pro Tools · Wwise · Unreal Engine ·</span>
+      </div>
+    </section>
+
+    <section class="testimonials page-shell" aria-labelledby="voicesTitle">
+      <h2 id="voicesTitle" class="section-title reveal">Voices From The Universe</h2>
+      <article class="quote-card reveal">
+        <p>&ldquo;Testimonial coming soon — check back shortly.&rdquo;</p>
       </article>
     </section>
   </main>
 
-  <footer class="site-footer page-shell">
-    <p>Syzygy Entertainment</p>
-    <a href="contact.html">Begin a project</a>
+  <footer class="site-footer">
+    <div class="page-shell">
+      <h2>Syzygy Entertainment</h2>
+      <div class="social-links" aria-label="Social links">
+        <a href="#"><span>IG</span> Instagram</a>
+        <a href="#"><span>IN</span> LinkedIn</a>
+        <a href="#"><span>GM</span> Gumroad</a>
+      </div>
+      <p>© 2026 Syzygy Entertainment · Developed by Madeline Guzman</p>
+      <div class="legal-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms &amp; Conditions</a>
+      </div>
+    </div>
   </footer>
 
   <script src="js/main.js"></script>

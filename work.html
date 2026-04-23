@@ -3,59 +3,115 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Work | Syzygy Entertainment</title>
-  <meta name="description" content="Selected work and creative systems from Syzygy Entertainment.">
+  <title>Work · Syzygy Entertainment</title>
+  <meta name="description" content="Explore selected Syzygy Entertainment projects across game audio, mixing, sound design, SFX libraries, and creative AI tools.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="noise" aria-hidden="true"></div>
-
-  <header class="site-header">
-    <a class="brand" href="index.html" aria-label="Syzygy Entertainment home">
-      <span class="brand-mark">S</span>
-      <span>Syzygy Ent</span>
+  <nav class="site-nav" id="siteNav">
+    <a href="index.html" class="nav-brand">
+      <span class="nav-brand-main">Syzygy Entertainment</span>
+      <span class="nav-brand-sub">Where Creativity and the Cosmos Align</span>
     </a>
-    <nav class="nav-links" aria-label="Primary navigation">
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
       <a href="work.html">Work</a>
       <a href="services.html">Services</a>
       <a href="tools.html">Tools</a>
       <a href="about.html">About</a>
-      <a class="nav-cta" href="contact.html">Contact</a>
-    </nav>
-    <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
-      <span></span>
-      <span></span>
+      <a href="contact.html">Contact</a>
+    </div>
+    <button class="nav-burger" id="navBurger" aria-label="Open menu">
+      <span></span><span></span><span></span>
     </button>
-  </header>
+  </nav>
 
-  <main class="page-shell subpage">
-    <p class="eyebrow reveal">Selected alignments</p>
-    <h1 class="page-title reveal">Work built for launch windows, long arcs, and lasting resonance.</h1>
-    <section class="work-list">
-      <article class="feature-panel reveal">
-        <span>Brand Systems</span>
-        <h2>Mythic identity systems for emerging creative ventures.</h2>
-        <p>Positioning, visual language, launch narratives, and content frameworks designed to make every touchpoint feel intentional.</p>
+  <div class="noise" aria-hidden="true"></div>
+
+  <main>
+    <section class="work-page-hero">
+      <div class="page-shell reveal">
+        <h1>The Universe</h1>
+        <p>Each project is a star in its own right — explore the constellations.</p>
+      </div>
+    </section>
+
+    <section class="work-filters page-shell" aria-label="Project filters">
+      <button class="filter-tab active" type="button" data-filter="all">All</button>
+      <button class="filter-tab" type="button" data-filter="game-audio">Game Audio</button>
+      <button class="filter-tab" type="button" data-filter="mixing">Mixing</button>
+      <button class="filter-tab" type="button" data-filter="sound-design">Sound Design</button>
+      <button class="filter-tab" type="button" data-filter="ai-tools">AI Tools</button>
+      <button class="filter-tab" type="button" data-filter="sfx">SFX</button>
+    </section>
+
+    <section class="project-grid page-shell" aria-label="Project grid">
+      <article class="project-card reveal" data-category="game-audio">
+        <span class="project-badge">Game Audio</span>
+        <h2>Immersive Soundscapes</h2>
+        <div class="software-tags" aria-label="Software used">
+          <span>Wwise</span>
+          <span>Unreal Engine</span>
+          <span>Pro Tools</span>
+        </div>
+        <p>Placeholder project exploring interactive audio systems, layered ambiences, and responsive sonic worldbuilding.</p>
+        <a class="project-link" href="#">View Project</a>
       </article>
-      <article class="feature-panel reveal">
-        <span>Digital Platforms</span>
-        <h2>Web experiences that turn complexity into invitation.</h2>
-        <p>Elegant, responsive sites and campaign hubs that carry a brand's atmosphere while staying clear, fast, and useful.</p>
+
+      <article class="project-card reveal" data-category="mixing">
+        <span class="project-badge">Mixing</span>
+        <h2>Clarity in the Mix</h2>
+        <div class="software-tags" aria-label="Software used">
+          <span>Pro Tools</span>
+          <span>Logic</span>
+          <span>Ableton</span>
+        </div>
+        <p>Placeholder mix work focused on vocal presence, emotional dynamics, and polished production detail.</p>
+        <a class="project-link" href="#">View Project</a>
       </article>
-      <article class="feature-panel reveal">
-        <span>Creative Operations</span>
-        <h2>Internal systems for teams moving at cinematic speed.</h2>
-        <p>Dashboards, process maps, templates, and automation that reduce drag without flattening the creative spark.</p>
+
+      <article class="project-card reveal" data-category="sfx">
+        <span class="project-badge">SFX</span>
+        <h2>Obsolete Machines Vol. 1</h2>
+        <div class="software-tags" aria-label="Software used">
+          <span>Pro Tools</span>
+          <span>Field Recording</span>
+        </div>
+        <p>A placeholder SFX library concept built from tactile machine textures, mechanical artifacts, and designed impacts.</p>
+        <a class="project-link" href="#">Gumroad</a>
+      </article>
+
+      <article class="project-card project-card-featured reveal" data-category="ai-tools">
+        <span class="project-badge">AI Tools</span>
+        <h2>VocalChain AI</h2>
+        <div class="software-tags" aria-label="Software used">
+          <span>AI Tool</span>
+          <span>Vocal Production</span>
+          <span>Engineering Workflow</span>
+        </div>
+        <p>An AI-powered vocal chain generator built for engineers and producers at every level.</p>
+        <a class="project-link project-link-large" href="https://madelineguzman.github.io/AI-Vocal-Architect/">Launch Tool</a>
       </article>
     </section>
   </main>
 
-  <footer class="site-footer page-shell">
-    <p>Syzygy Entertainment</p>
-    <a href="contact.html">Begin a project</a>
+  <footer class="site-footer">
+    <div class="page-shell">
+      <h2>Syzygy Entertainment</h2>
+      <div class="social-links" aria-label="Social links">
+        <a href="#"><span>IG</span> Instagram</a>
+        <a href="#"><span>IN</span> LinkedIn</a>
+        <a href="#"><span>GM</span> Gumroad</a>
+      </div>
+      <p>© 2026 Syzygy Entertainment · Developed by Madeline Guzman</p>
+      <div class="legal-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms &amp; Conditions</a>
+      </div>
+    </div>
   </footer>
 
   <script src="js/main.js"></script>

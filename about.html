@@ -3,50 +3,110 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About | Syzygy Entertainment</title>
-  <meta name="description" content="About Syzygy Entertainment and Madeline's creative systems practice.">
+  <title>About · Syzygy Entertainment</title>
+  <meta name="description" content="Meet Madeline Guzman, audio engineer and sound designer behind Syzygy Entertainment and the Rara Kallistos creative universe.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="noise" aria-hidden="true"></div>
-
-  <header class="site-header">
-    <a class="brand" href="index.html" aria-label="Syzygy Entertainment home">
-      <span class="brand-mark">S</span>
-      <span>Syzygy Ent</span>
+  <nav class="site-nav" id="siteNav">
+    <a href="index.html" class="nav-brand">
+      <span class="nav-brand-main">Syzygy Entertainment</span>
+      <span class="nav-brand-sub">Where Creativity and the Cosmos Align</span>
     </a>
-    <nav class="nav-links" aria-label="Primary navigation">
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
       <a href="work.html">Work</a>
       <a href="services.html">Services</a>
       <a href="tools.html">Tools</a>
       <a href="about.html">About</a>
-      <a class="nav-cta" href="contact.html">Contact</a>
-    </nav>
-    <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
-      <span></span>
-      <span></span>
+      <a href="contact.html">Contact</a>
+    </div>
+    <button class="nav-burger" id="navBurger" aria-label="Open menu">
+      <span></span><span></span><span></span>
     </button>
-  </header>
+  </nav>
 
-  <main class="page-shell subpage about-layout">
-    <section class="about-copy reveal">
-      <p class="eyebrow">About</p>
-      <h1 class="page-title">A creative systems studio for work with gravity.</h1>
-      <p class="lead">Syzygy Entertainment is built around the belief that great creative work needs both mystery and machinery: the emotional spark people remember, and the systems that help it travel.</p>
-      <p>Led by Madeline, the studio blends brand strategy, digital design, storytelling, and operational thinking to help ambitious projects find alignment and momentum.</p>
+  <div class="noise" aria-hidden="true"></div>
+
+  <main>
+    <section class="about-engineer page-shell">
+      <figure class="about-photo-wrap reveal">
+        <img src="assets/img/madeline.jpg" alt="Madeline Guzman" class="about-photo">
+      </figure>
+      <div class="about-engineer-copy reveal">
+        <p class="about-eyebrow">The Engineer</p>
+        <h1>Madeline Guzman</h1>
+        <p>"I'm an audio engineer and sound designer with a foundation built in two demanding schools — the U.S. Marine Corps and Full Sail University. After 9.5 years of active duty service as a Field Radio Operator, I brought the same technical precision and high-pressure reliability I developed in the field into the studio. I hold a BS in Audio Production and certifications in Pro Tools, Wwise 101, and FMOD, and I work across game audio implementation, music mixing, and vocal production. I'm currently playtesting professionally while actively pursuing a career creating the audio worlds I've loved since childhood."</p>
+        <a class="resume-button" href="#">Download Resume</a>
+      </div>
     </section>
-    <figure class="portrait-card reveal">
-      <img src="assets/img/madeline.jpg" alt="Portrait placeholder for Madeline">
-      <figcaption>Portrait placeholder. Replace with your final image.</figcaption>
-    </figure>
+
+    <section class="skills-section page-shell" aria-labelledby="skillsTitle">
+      <h2 id="skillsTitle" class="section-title reveal">Tools of the Craft</h2>
+      <div class="skills-grid reveal">
+        <span>Pro Tools</span>
+        <span>Logic Pro</span>
+        <span>Ableton</span>
+        <span>FL Studio</span>
+        <span>Wwise</span>
+        <span>FMOD</span>
+        <span>Unreal Engine</span>
+        <span>Melodyne</span>
+        <span>Autotune</span>
+        <span>iMovie</span>
+        <span>Adobe Premiere</span>
+        <span>Field Recording</span>
+        <span>Vocal Production</span>
+        <span>Game Audio Implementation</span>
+        <span>Sound Design</span>
+        <span>Mixing &amp; Mastering</span>
+      </div>
+    </section>
+
+    <section class="artist-panel page-shell">
+      <div class="artist-panel-inner reveal">
+        <p class="artist-eyebrow">The Artist</p>
+        <h2>Rara Kallistos</h2>
+        <p>"This is my creative universe — the place where rhythm, precision, and a lifelong obsession with video games become something you can hear and feel. The music here isn't background. The sound design isn't decoration. Every frequency is chosen for one reason: how deeply it pulls you into the world you're already standing in. When the Syzygy aligns, you don't just hear the universe. You forget there's a wall between you and it."</p>
+      </div>
+    </section>
+
+    <section class="credentials page-shell" aria-labelledby="credentialsTitle">
+      <h2 id="credentialsTitle" class="section-title reveal">Credentials</h2>
+      <div class="credentials-grid">
+        <article class="credential-card reveal">
+          <h3>BS Audio Production</h3>
+          <p>Full Sail University · 2023</p>
+        </article>
+        <article class="credential-card reveal">
+          <h3>Pro Tools Certified</h3>
+          <p>Avid</p>
+        </article>
+        <article class="credential-card reveal">
+          <h3>Wwise 101 &amp; FMOD Certified</h3>
+          <p>Interactive audio implementation</p>
+        </article>
+      </div>
+    </section>
   </main>
 
-  <footer class="site-footer page-shell">
-    <p>Syzygy Entertainment</p>
-    <a href="contact.html">Begin a project</a>
+  <footer class="site-footer">
+    <div class="page-shell">
+      <h2>Syzygy Entertainment</h2>
+      <div class="social-links" aria-label="Social links">
+        <a href="#"><span>IG</span> Instagram</a>
+        <a href="#"><span>IN</span> LinkedIn</a>
+        <a href="#"><span>GM</span> Gumroad</a>
+      </div>
+      <p>© 2026 Syzygy Entertainment · Developed by Madeline Guzman</p>
+      <div class="legal-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms &amp; Conditions</a>
+      </div>
+    </div>
   </footer>
 
   <script src="js/main.js"></script>
