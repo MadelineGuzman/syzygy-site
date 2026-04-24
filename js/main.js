@@ -333,6 +333,29 @@ function initGate() {
   window.addEventListener("resize", () => {
     ({ width: W, height: H } = resizeCanvas());
   });
+
+  // Nav brand click triggers gate again from homepage
+  const navBrand = document.getElementById("navBrandHome");
+  if (navBrand) {
+    navBrand.addEventListener("click", (e) => {
+      e.preventDefault();
+      stars.forEach((star) => {
+        star.x = Math.random() * W;
+        star.y = Math.random() * H;
+        star.opacity = Math.random() * 0.7 + 0.2;
+      });
+      isWarping = false;
+      warpStart = null;
+      hoverSpeed = 1;
+      gate.style.display = "flex";
+      gate.style.opacity = "1";
+      gate.style.transition = "none";
+      gate.style.animation = "none";
+      cancelAnimationFrame(animFrame);
+      animFrame = requestAnimationFrame(animate);
+      window.scrollTo(0, 0);
+    });
+  }
 }
 
 document.addEventListener("DOMContentLoaded", initGate);
