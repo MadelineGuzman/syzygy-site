@@ -1915,6 +1915,11 @@ main,
   line-height: 1.65;
 }
 
+.timeline-note span {
+  display: block;
+  margin-top: 0.2rem;
+}
+
 .submit-btn {
   padding: 16px 32px;
   border: 0;
