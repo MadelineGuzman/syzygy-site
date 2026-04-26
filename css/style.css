@@ -1469,6 +1469,12 @@ main,
   margin: 0;
 }
 
+.about-artist-photo-wrap {
+  display: grid;
+  place-items: center;
+  margin: 28px 0 0;
+}
+
 .about-photo {
   width: 240px;
   height: 240px;
@@ -1478,6 +1484,10 @@ main,
   box-shadow: 0 0 0 3px var(--cyan), 0 0 24px rgba(90,216,255,0.2);
   display: block;
   margin: 0 auto 2rem;
+}
+
+.about-artist-photo {
+  margin-bottom: 0;
 }
 
 .about-eyebrow,
