@@ -1473,17 +1473,22 @@ main,
 .about-photo-wrap,
 .about-artist-photo-wrap {
   flex: 0 0 160px;
+  margin-top: 0.5rem;
 }
 
 .about-photo-wrap {
   display: grid;
   place-items: center;
-  margin: 0;
 }
 
 .about-engineer-copy,
 .about-artist-copy {
   padding-top: 0;
+}
+
+.about-engineer-copy > :first-child,
+.about-artist-copy > :first-child {
+  margin-top: 0;
 }
 
 .about-photo {
