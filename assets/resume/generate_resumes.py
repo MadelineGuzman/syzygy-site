@@ -39,24 +39,27 @@ def build_styles():
             fontName="Helvetica-Bold",
             fontSize=22,
             leading=26,
+            alignment=TA_CENTER,
             textColor=colors.HexColor("#111827"),
-            spaceAfter=4,
+            spaceAfter=6,
         ),
         "title": ParagraphStyle(
             "Title",
             parent=sample["BodyText"],
             fontName="Helvetica-Bold",
-            fontSize=10.5,
-            leading=13,
+            fontSize=9.4,
+            leading=11.4,
+            alignment=TA_CENTER,
             textColor=colors.HexColor("#374151"),
-            spaceAfter=4,
+            spaceAfter=6,
         ),
         "contact": ParagraphStyle(
             "Contact",
             parent=sample["BodyText"],
             fontName="Helvetica",
-            fontSize=9,
-            leading=12,
+            fontSize=8.8,
+            leading=11.2,
+            alignment=TA_CENTER,
             textColor=colors.HexColor("#374151"),
         ),
         "brand": ParagraphStyle(
@@ -142,6 +145,7 @@ def bullet_list(items: list[str], styles: dict, left_indent: int = 12):
 
 def add_header(story: list, contact: dict, styles: dict, title: str):
     story.append(Paragraph(contact["name"].upper(), styles["name"]))
+    story.append(Spacer(1, 0.015 * inch))
     story.append(Paragraph(title, styles["title"]))
     story.append(
         Paragraph(
@@ -158,6 +162,7 @@ def add_header(story: list, contact: dict, styles: dict, title: str):
             styles["contact"],
         )
     )
+    story.append(Spacer(1, 0.02 * inch))
     story.append(Spacer(1, 0.08 * inch))
     story.append(HRFlowable(width="100%", color=colors.HexColor("#D1D5DB"), thickness=0.6))
     story.append(Spacer(1, 0.08 * inch))
