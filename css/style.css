@@ -1028,6 +1028,20 @@ main,
   font-weight: 700;
 }
 
+.experience-affiliation {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 14px;
+}
+
+.experience-affiliation-logo {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  opacity: 0.62;
+  filter: saturate(0.92);
+}
+
 .service-card {
   position: relative;
   overflow: hidden;
@@ -2338,6 +2352,10 @@ main,
 
   .service-overview-list span {
     width: 100%;
+  }
+
+  .experience-affiliation {
+    justify-content: flex-start;
   }
 
   .featured-work,
