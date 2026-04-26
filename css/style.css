@@ -1636,6 +1636,10 @@ main,
   grid-column: 2;
 }
 
+.about-artist-photo-wrap {
+  grid-column: 1;
+}
+
 .about-artist-block h2 {
   margin-top: 14px;
   color: var(--gold);
