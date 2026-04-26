@@ -1020,6 +1020,7 @@ main,
   border-radius: var(--radius-md);
   background: rgba(13, 18, 39, 0.4);
   color: #dce6ff;
+  cursor: default;
 }
 
 .service-overview-list span {
@@ -1117,6 +1118,15 @@ main,
 
 .experience-section {
   padding: 0 0 72px;
+}
+
+.about-experience {
+  padding: 0 0 64px;
+}
+
+.about-experience .experience-list p {
+  color: var(--muted);
+  background: rgba(13, 18, 39, 0.3);
 }
 
 .process-steps {
