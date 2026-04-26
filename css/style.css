@@ -1459,7 +1459,7 @@ main,
 .about-engineer {
   display: flex;
   gap: clamp(34px, 6vw, 78px);
-  align-items: center;
+  align-items: flex-start;
 }
 
 .about-engineer > * {
@@ -1479,6 +1479,11 @@ main,
   display: grid;
   place-items: center;
   margin: 0;
+}
+
+.about-engineer-copy,
+.about-artist-copy {
+  padding-top: 0;
 }
 
 .about-photo {
@@ -1632,7 +1637,7 @@ main,
 .about-artist-block {
   display: flex;
   gap: clamp(34px, 6vw, 78px);
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
 }
 
