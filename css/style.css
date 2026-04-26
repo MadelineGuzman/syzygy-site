@@ -1717,6 +1717,8 @@ main,
   margin: 18px auto 0;
   color: var(--muted);
   font-size: clamp(1.05rem, 2vw, 1.24rem);
+  line-height: 1.85;
+  opacity: 0.9;
 }
 
 .contact-form-section {
@@ -1909,10 +1911,49 @@ main,
   font-size: 0.82rem;
 }
 
+.timeline-tiers {
+  display: grid;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.timeline-tier {
+  display: grid;
+  gap: 5px;
+  padding: 14px 16px;
+  border: 1px solid rgba(150, 165, 255, 0.14);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.timeline-tier-label {
+  color: var(--muted);
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  opacity: 0.72;
+  text-transform: uppercase;
+}
+
+.timeline-tier-value {
+  font-size: 0.92rem;
+  font-weight: 800;
+}
+
+.timeline-tier-value-standard {
+  color: var(--cyan);
+}
+
+.timeline-tier-value-priority {
+  color: var(--gold);
+}
+
 .timeline-note {
   color: var(--muted);
   font-size: 0.84rem;
   line-height: 1.65;
+  text-align: center;
+  opacity: 0.88;
 }
 
 .timeline-note span {
