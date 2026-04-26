@@ -34,13 +34,13 @@
   <main>
     <section class="contact-hero page-shell">
       <div class="reveal">
-        <h1>Send Your Transmission</h1>
-        <p>I respond within 48 hours. Let's build something together.</p>
+        <h1>Start Your Project</h1>
+        <p>I'll orbit back within 48 hours. Tell me a bit about your project.</p>
       </div>
     </section>
 
     <section class="contact-form-section page-shell" aria-label="Contact form">
-      <div data-fs-success hidden>Transmission received. I'll be in touch within 48 hours.</div>
+      <div data-fs-success hidden>Transmission received. I&apos;ll orbit back within 48 hours.</div>
       <div data-fs-error hidden>Something went wrong. Please try again or email me directly.</div>
       <form class="transmission-form reveal" id="contact-form">
         <div class="field">
@@ -54,21 +54,52 @@
           <span data-fs-error="email"></span>
         </div>
         <div class="field">
+          <label for="business_name">Business Name</label>
+          <input id="business_name" type="text" name="business_name" data-fs-field>
+          <span data-fs-error="business_name"></span>
+        </div>
+        <div class="field">
+          <label for="business_type">Type of Business</label>
+          <input id="business_type" type="text" name="business_type" data-fs-field>
+          <span data-fs-error="business_type"></span>
+        </div>
+        <div class="field">
           <label for="project_type">Project Type</label>
           <select id="project_type" name="project_type" required data-fs-field>
-            <option value="Game Audio & Sound Design">Game Audio &amp; Sound Design</option>
-            <option value="Mixing & Engineering">Mixing &amp; Engineering</option>
-            <option value="Vocal Production">Vocal Production</option>
-            <option value="General Inquiry">General Inquiry</option>
+            <option value="" selected disabled>Select a project type</option>
+            <option value="Website Design">Website Design</option>
+            <option value="Audio (Mixing / Sound Design)">Audio (Mixing / Sound Design)</option>
+            <option value="Both">Both</option>
           </select>
           <span data-fs-error="project_type"></span>
         </div>
         <div class="field">
-          <label for="message">Message</label>
+          <label for="project_timeline">Project Timeline</label>
+          <select id="project_timeline" name="project_timeline" required data-fs-field>
+            <option value="" selected disabled>Select a timeline</option>
+            <option value="ASAP (Express delivery available)">ASAP (Express delivery available)</option>
+            <option value="1–2 Weeks">1–2 Weeks</option>
+            <option value="Flexible">Flexible</option>
+          </select>
+          <span data-fs-error="project_timeline"></span>
+        </div>
+        <div class="field">
+          <label for="budget_range">Budget Range</label>
+          <select id="budget_range" name="budget_range" required data-fs-field>
+            <option value="" selected disabled>Select a budget range</option>
+            <option value="$100–300">$100–300</option>
+            <option value="$300–800">$300–800</option>
+            <option value="$800+">$800+</option>
+          </select>
+          <span data-fs-error="budget_range"></span>
+        </div>
+        <div class="field">
+          <label for="message">Tell me about your project</label>
           <textarea id="message" name="message" rows="5" required data-fs-field></textarea>
           <span data-fs-error="message"></span>
         </div>
         <button class="submit-btn" type="submit" data-fs-submit-btn>Send Transmission</button>
+        <p class="timeline-note">Standard timeline: 7&ndash;10 business days. Express delivery (48 hours) available for an additional fee. Timeline begins once all required project details and assets are received.</p>
       </form>
       <script>
         window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
