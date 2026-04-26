@@ -1,0 +1,169 @@
+{
+  "contact": {
+    "name": "Madeline Guzman",
+    "title_creative": "Audio Engineer · Sound Designer · Creative Technologist",
+    "location": "New Britain, CT",
+    "email": "madeline.guzman@syzygyent.com",
+    "phone": "(860) 770-8903",
+    "linkedin": "linkedin.com/in/rarakallistos",
+    "website": "syzygyent.com",
+    "tools": "tools.syzygyent.com"
+  },
+  "creative": {
+    "brand_name": "Syzygy Entertainment",
+    "brand_tagline": "\"Where Creativity and the Cosmos Align\"",
+    "availability": "Authorized to work in the U.S. · Available for hybrid/remote work",
+    "summary": "Game audio engineer and sound designer with a foundation built in two demanding schools: the U.S. Marine Corps and Full Sail University. Specializing in Wwise implementation, spatial audio, foley, SFX design, interactive media, and AI-assisted audio tooling. BS in Audio Production (2023). Certified in Pro Tools, Wwise 101, and FMOD Fundamentals.",
+    "skills": [
+      {
+        "label": "Implementation",
+        "items": "Wwise · FMOD · Unreal Engine · Spatial Audio · Interactive Systems"
+      },
+      {
+        "label": "DAWs",
+        "items": "Pro Tools · Ableton · FL Studio · Logic Pro"
+      },
+      {
+        "label": "Sound Design",
+        "items": "Foley · Field Recording · SFX Design · Dialogue Editing · Ambience"
+      },
+      {
+        "label": "Tools",
+        "items": "Jira · Git · Adobe Premiere · BroadcastPix · MAM Systems"
+      },
+      {
+        "label": "Other",
+        "items": "Bilingual EN/ES · QA Playtesting · Bug Documentation · AI Tool Development"
+      }
+    ],
+    "experience": [
+      {
+        "role": "Sound Design Intern",
+        "org": "Sports Media Inc",
+        "meta": "April 2026 – Present · Remote",
+        "bullets": [
+          "Creating custom SFX for EVOC, an emergency training simulator game.",
+          "Contributing sound design work for interactive training scenarios and in-game audio feedback."
+        ]
+      },
+      {
+        "role": "Freelance Game Audio Engineer & Sound Designer",
+        "org": "Syzygy Entertainment",
+        "meta": "2023 – Present · Remote",
+        "bullets": [
+          "Designed and implemented spatial ambience systems for horror game environments using Wwise, including full audio hierarchy, event naming, and positional audio triggered by character position.",
+          "Recorded, edited, and implemented complete character foley packages, including movement sounds and voice-based vocalizations using original source material.",
+          "Completed cinematic audio redesign and interactive SFX implementation for Unity Technologies' Blacksmith demo, designing all SFX from scratch and iterating in Wwise until game-correct.",
+          "Published Obsolete Machines Vol. 1, a field-recorded SFX library distributed through Gumroad and itch.io.",
+          "Built Vocal Architect, an AI-powered vocal signal-chain tool deployed at tools.syzygyent.com."
+        ]
+      },
+      {
+        "role": "QA Playtester",
+        "org": "Independent Contract",
+        "meta": "April 2026 – Present · Remote",
+        "bullets": [
+          "Structured playtesting for unreleased game titles under NDA, covering UI/UX, controls, audio bugs, and release readiness.",
+          "Delivered professional bug reports with severity ratings, reproduction steps, and design recommendations."
+        ]
+      },
+      {
+        "role": "Technical Director / Director / Editor",
+        "org": "Nutmeg TV",
+        "meta": "2023 – Present · Farmington, CT",
+        "bullets": [
+          "Directed live studio productions and municipal meetings while operating BroadcastPix, editing in Adobe Premiere, and managing MAM workflows."
+        ]
+      }
+    ],
+    "military": {
+      "role": "Sergeant (E-5) — Field Radio Operator",
+      "org": "United States Marine Corps",
+      "meta": "2008 – 2017 · Active Duty, 9.5 Years",
+      "bullets": [
+        "Built a technical foundation in audio communications and signal systems while leading Marines in high-pressure operational environments requiring fast problem-solving and clear communication."
+      ]
+    },
+    "education": [
+      "AS in Computer Science, Software Development — CT State Community College (Expected August 2027)",
+      "BS in Audio Production — Full Sail University (2023)",
+      "Pro Tools Certified — Avid",
+      "Wwise 101 Certified — Audiokinetic (March 2026)",
+      "FMOD Fundamentals Certified — Firelight Technologies (April 2026)",
+      "Learning Jira (Cloud Edition) — LinkedIn Learning"
+    ]
+  },
+  "ats": {
+    "summary": "Game audio engineer and sound designer with experience in audio implementation, field recording, foley, and interactive media. Proficient in Wwise, FMOD, Pro Tools, and Unreal Engine, with hands-on work in spatial audio, ambience systems, SFX, dialogue editing, and game-focused sound design. U.S. Marine Corps veteran with 9.5 years of service, bringing disciplined execution, fast technical troubleshooting, and high-pressure reliability to every project.",
+    "skills": [
+      "Audio Implementation: Wwise, FMOD, Unreal Engine (audio), spatial audio, interactive audio systems",
+      "DAWs & Software: Pro Tools, Adobe Premiere, Ableton, FL Studio, Logic Pro",
+      "Sound Design: Foley recording, SFX design, field recording, dialogue editing, ambience design",
+      "Workflow Tools: Jira, Git, MAM systems, BroadcastPix",
+      "Other: Bilingual (English/Spanish), QA playtesting, bug documentation, technical writing"
+    ],
+    "experience": [
+      {
+        "role": "Sound Design Intern",
+        "org": "Sports Media Inc",
+        "meta": "April 2026 – Present · Remote",
+        "bullets": [
+          "Creating custom SFX for EVOC, an emergency training simulator game.",
+          "Contributing sound design work for interactive training scenarios and in-game audio feedback."
+        ]
+      },
+      {
+        "role": "Freelance Game Audio Engineer & Sound Designer",
+        "org": "Syzygy Entertainment",
+        "meta": "2023 – Present · Remote",
+        "bullets": [
+          "Designed and implemented spatial ambience systems for horror game environments using Wwise, including full audio hierarchy setup and positional audio triggered by character position.",
+          "Recorded, edited, and implemented complete character foley packages including movement sounds and voice-based vocalizations for game protagonists.",
+          "Performed cinematic audio redesign and interactive SFX implementation for Unity Technologies' Blacksmith demo environment.",
+          "Created and published original SFX libraries, including Obsolete Machines Vol. 1, available on Gumroad and itch.io.",
+          "Built Vocal Architect, an AI-powered vocal signal-chain tool for engineers and producers, deployed at tools.syzygyent.com.",
+          "Mixed and mastered vocal-driven music projects and completed dialogue cleanup and restoration in Pro Tools."
+        ]
+      },
+      {
+        "role": "QA Playtester",
+        "org": "Independent Contract",
+        "meta": "April 2026 – Present · Remote",
+        "bullets": [
+          "Conduct structured playtesting sessions for unreleased game titles under NDA.",
+          "Document UI/UX issues, control-scheme feedback, audio bugs, and release readiness assessments.",
+          "Deliver detailed bug reports covering reproduction steps, severity ratings, and design recommendations."
+        ]
+      },
+      {
+        "role": "Technical Director / Director / Editor",
+        "org": "Nutmeg TV",
+        "meta": "2023 – Present · Farmington, CT",
+        "bullets": [
+          "Direct live studio productions, including multi-camera shows and municipal meetings.",
+          "Operate BroadcastPix systems for camera switching, graphics, and audio monitoring.",
+          "Edit broadcast content in Adobe Premiere and manage MAM workflows for ingest and archiving."
+        ]
+      }
+    ],
+    "military": {
+      "role": "Sergeant (E-5) — Field Radio Operator",
+      "org": "United States Marine Corps",
+      "meta": "2008 – 2017 · Active Duty, 9.5 Years",
+      "bullets": [
+        "Developed a technical foundation in audio communications systems and signal troubleshooting under high-pressure operational conditions.",
+        "Led and trained Marines in time-critical environments requiring fast technical problem-solving and clear communication.",
+        "Honorably discharged at the rank of Sergeant (E-5)."
+      ]
+    },
+    "education": [
+      "AS in Computer Science, Software Development — CT State Community College (Expected August 2027)",
+      "Bachelor of Science, Audio Production — Full Sail University (2023)",
+      "Pro Tools Certified — Avid",
+      "Wwise 101 Certified — Audiokinetic (March 2026)",
+      "FMOD Fundamentals Certified — Firelight Technologies (April 2026)",
+      "Learning Jira (Cloud Edition) — LinkedIn Learning"
+    ],
+    "additional": "Available for hybrid or remote work · Authorized to work in the U.S. · Bilingual: English / Spanish"
+  }
+}
