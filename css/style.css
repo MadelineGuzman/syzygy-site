@@ -1471,7 +1471,7 @@ main,
 
 .about-artist-photo-wrap {
   display: grid;
-  place-items: center;
+  place-items: start;
   margin: 28px 0 0;
 }
 
