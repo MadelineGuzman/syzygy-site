@@ -1470,15 +1470,41 @@ main,
   flex: 1 1 auto;
 }
 
-.about-photo-wrap,
+.about-photo-slot,
 .about-artist-photo-wrap {
   flex: 0 0 160px;
   margin-top: 2rem;
 }
 
 .about-photo-wrap {
-  display: grid;
-  place-items: center;
+  position: relative;
+  display: inline-block;
+  margin: 0 auto 2rem;
+}
+
+.wig-badge {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 2px solid var(--gold);
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 12px rgba(240,192,96,0.3);
+}
+
+.wig-badge .experience-affiliation-logo {
+  width: 30px;
+  height: 30px;
+  opacity: 0.92;
+}
+
+.about-photo-wrap {
+  display: inline-block;
 }
 
 .about-engineer-copy,
